@@ -1,4 +1,4 @@
-# Getting Started with Create React App - Pizaa Menu
+# Getting Started with Create React App - Pizza Menu
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
