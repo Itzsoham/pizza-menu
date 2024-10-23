@@ -156,7 +156,14 @@ function Order({ CloseHours, OpenHour }) {
         We're currently open from {OpenHour}:00 to {CloseHours}:00. Come visit
         us or Order online.
       </p>
-      <button className="btn">Order</button>
+      <button
+        className="btn"
+        onClick={() => {
+          window.location = "https://pizza--club.vercel.app/";
+        }}
+      >
+        Order
+      </button>
     </div>
   );
 }
