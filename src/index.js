@@ -83,8 +83,8 @@ function Menu() {
       {numPizzas > 0 && (
         <>
           <p>
-            In K1NGSCLAN we are currently serving {numPizzas} types of cousines and in
-            future we might increase the numbers.
+            In K1NGSCLAN we are currently serving {numPizzas} types of cousines
+            and in future we might increase the numbers.
           </p>
           <ul className="pizzas">
             {pizzas.map((pizza) => (
@@ -114,7 +114,8 @@ function Pizza({ pizzaObj }) {
   return (
     <li
       className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}
-    `}>
+    `}
+    >
       <img src={pizzaObj.photoName} alt={pizzaObj.name}></img>
       <div>
         <h3>{pizzaObj.name}</h3>
@@ -156,7 +157,14 @@ function Order({ CloseHours, OpenHour }) {
         We're currently open from {OpenHour}:00 to {CloseHours}:00. Come visit
         us or Order online.
       </p>
-      <button className="btn">Order</button>
+      <button
+        className="btn"
+        onClick={() => {
+          window.location = "https://pizza--club.vercel.app/";
+        }}
+      >
+        Order
+      </button>
     </div>
   );
 }
